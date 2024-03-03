@@ -1,5 +1,4 @@
-const { updateAnyUser } = require('../../controllers/user');
-
+const { updateAnyUser } = require('../controllers/user');
 const router = require('express').Router();
 
 
@@ -11,5 +10,5 @@ router.get('/health', (_, res) => {
 // to get the user data and update it
 router.get('/', updateAnyUser);
 
+// export the router
 module.exports = router;
-

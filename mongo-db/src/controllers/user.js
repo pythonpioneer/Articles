@@ -1,4 +1,4 @@
-const User = require("../src/models/User");
+const User = require("../models/User");
 
 
 // to update any user and return some data
@@ -18,7 +18,6 @@ const updateAnyUser = async (req, res) => {
 
         // here we will return the user
         res.status(200).json({ user: updatedUser });
-
 
     } catch (error) {  // if something went wrong
         return res.status(500).json({ status: 500, message: "Internal Server Error!" });
